@@ -31,5 +31,6 @@ Q：切换到新狗后，有哪些好处？
 5. 等等等等。如果想了解更多特性，请联系王渊（武汉产品）索取新狗方案的资料。
 
 ## 附录
-1. 新狗部署故障集：http://note.youdao.com/noteshare?id=799addfdf651465ade6117863739c518&sub=1F6792E4F39B4001BE514ACE52BA99FA
+1. [新狗部署故障集](questions/error-codes.md)
+
 
