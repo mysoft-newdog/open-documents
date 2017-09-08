@@ -2,11 +2,10 @@
 
 ## 更新步骤
 1. 备份相关文件，包括：
-    web.config
-    bin\license.xml
-    以及站点中会被更新包文件覆盖的文件
-2. 安装新狗驱动包。插狗服务器和产品站点所在的服务器都需要安装。
-
+    - web.config
+    - bin\license.xml
+    - 站点中会被更新包文件覆盖的文件
+2. 安装新狗驱动包。插狗服务器和产品站点所在的服务器都需要安装。[产品狗驱动下载地址](tools\Sentinel_Runtime.zip)
 3. 将更新包中的文件覆盖到站点目录。
 4. 将新的License文件（License2.xml）和狗文件（licenseDog.xml）放入站点\bin目录。
 5. 调整web.config配置。参见后续说明。
