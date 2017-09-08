@@ -25,8 +25,8 @@
 ```xml
 <add key="ERP-License-ProductVersion" value="3.0.3"/>
 ```
-节点的Value值含义说明：
-这个值用于ERP底层代码从合并的License文件(license2.xml）中找到当前站点使用的License。
+> 节点的Value值含义说明： 
+> 这个值用于ERP底层代码从合并的License文件(license2.xml）中找到当前站点使用的License。
 
 配置方法(重要）：
 1. 用记事本或其他文本编辑器（推荐Notepad++）打开license2.xml文件
@@ -41,14 +41,17 @@
 2. 搜索：```productVersion```，会找到多个匹配项。这里每一个匹配项所在的license节点是一个完整的License。
 3. 从上一步找到的节点中选取当前站点使用的License节点。
 4. 在上一步找到的License节点下找到节点：
-    <dbconn appname="Default" regname="xxxERP3.0.3" />
+```xml
+<dbconn appname="Default" regname="ERP3.0.3" />
+```
+注册表项需要更改为regname属性的值。在上述示例中，应为ERP3.0.3。
 
-注册表项需要更改为这里红色字体部分的内容。
-安全起见，更改注册表项前，可以先导出注册表项。（注册表编辑器中的文件->导出功能）
+> 安全起见，更改注册表项前，可以先导出注册表项。（注册表编辑器中的文件->导出功能）
 
 ## 其他配置调整
 重构ERP 1.0 SP1/SP2需调整```App_Data\AuthorizedWhitelist.config ```
-在Whitelist节点下增加以下内容：
+
+在```Whitelist```节点内增加以下内容：
 ```xml
 <!--加密狗相关-->
 <Url>/DogOffline.ashx</Url>
